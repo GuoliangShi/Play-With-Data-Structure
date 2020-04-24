@@ -49,5 +49,5 @@ void main()
 		cout << "data2 = ";
 		data2.show();
 	}
-
+ 
 }
