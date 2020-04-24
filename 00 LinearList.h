@@ -138,5 +138,5 @@ LinearList<T> &LinearList<T>::operator+(const LinearList<T> & lt1)
 	length = length + lt1.length;
 	return *this;
 }
-
+ 
 #endif // !LINEARLIST
