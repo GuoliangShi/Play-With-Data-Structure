@@ -148,5 +148,5 @@ void ClearList(LinkList &L)
 	}
 	L->next = NULL;
 }
-
+ 
 #endif // !LINEARLIST
