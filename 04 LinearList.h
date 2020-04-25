@@ -105,5 +105,5 @@ bool ListDelete(Node *sl, int k)
 	sl[index].cur = sl[temp].cur;
 	free_SLL(sl, temp);
 }
-
+ 
 #endif // !LINEARLIST
