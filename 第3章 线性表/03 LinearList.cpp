@@ -33,4 +33,4 @@ void main()
 	ClearList(test1);
 	cout << "\nAfter clear list: " << endl;
 	Show(test1);
-} 
+}  
