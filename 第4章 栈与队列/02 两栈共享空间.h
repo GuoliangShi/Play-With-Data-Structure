@@ -96,6 +96,6 @@ void sqStack<T>::ClearStack(int c)
 		top1 = -1;
 	else if (c == 2)
 		top2 = MAXSIZE;
-}
+} 
 
 #endif
