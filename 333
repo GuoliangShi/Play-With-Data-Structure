@@ -1,0 +1,12 @@
+#include<iostream>
+#include<string>
+#include"tree.h"
+
+using namespace std;
+
+void main()
+{
+	TreeList test = new Node;
+	cout << "Enter characters in the preceding order: \n";
+	CreateTree(test);
+}
