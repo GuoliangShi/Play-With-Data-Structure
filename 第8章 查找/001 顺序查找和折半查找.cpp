@@ -1,4 +1,5 @@
 #include<iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -47,16 +48,19 @@ int Sequential_Search2(int *arr, const int n, const int key)
 		cout << "#Sequential_Search2: Find key at ";
 		return 0;
 	}
+	int temp = arr[0];
 	arr[0] = key;
 	int i = n;
 	while (arr[i] != key)
 		i--;
 	if (i != 0) {
+		arr[0] = temp;
 		cout << "#Sequential_Search2: Find key at ";
 		return i;
 	}
 	else
 	{
+		arr[0] = temp;
 		cout << "#Sequential_Search2: Not find key, return ";
 		return 0;
 	}
@@ -67,7 +71,10 @@ int Binary_Search(int *arr, const int n, const int key)
 	int low = 0, hight = n - 1, mid;
 	while (low <= hight)
 	{
-		mid = (low + hight) / 2;
+		// 折半查找
+		//mid = (low + hight) / 2;
+		// 插值查找
+		mid = low + (double(key - arr[low]) / double(arr[hight] - arr[low]))*(hight - low);
 		if (arr[mid] == key) {
 			cout << "#Binary_Search: Find key at ";
 			return mid;
